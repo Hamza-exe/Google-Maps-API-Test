@@ -2,6 +2,13 @@
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibW91cmlidXMiLCJhIjoiY2wxd2lkZmh1MDB5dzNlc2pxdTgwcTQ4YyJ9.8AQnsSGfZv0nvk48pylE7Q';
 
+
+
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+})
+
 // The 'success' callback function
 function showLocation(position) {
     // const longitude = position.coords.longitude;
